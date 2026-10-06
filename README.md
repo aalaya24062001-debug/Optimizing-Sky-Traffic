@@ -1,8 +1,8 @@
-##**Optimizing Sky Traffic: U.S. Airline Delay Forecasting (2020–2026)**##
+##**OPTIMIZING SKY TRAFFIC: U.S. Airline Delay Forecasting (2020–2026)**##
 
 Forecasting monthly arrival delay minutes for U.S. airlines, finding what drives delay, and testing a what-if scenario. Built in Python and validated on future data the model never saw, then benchmarked against simple baselines.
 
-**Key results**
+**KEY RESULTS**
 
 Test period: January 2025 to July 2026 (35,632 records). Training period: July 2020 to December 2024 (101,060 records).
 
@@ -24,7 +24,7 @@ WAPE = total absolute error ÷ total actual delay minutes.
 
 The final model has about 24% lower MAE and 17% lower RMSE than the strongest baseline.
 
-**Main findings**
+**MAIN FINDINGS**
 
 1.Forecasting works, with realistic accuracy. On unseen 2025–2026 data the final model reaches R² 0.912 and beats every baseline on every metric.
 
@@ -42,7 +42,7 @@ The final model has about 24% lower MAE and 17% lower RMSE than the strongest ba
 
 8.Most delay is controllable (from the Version 1 analysis). Roughly 70–77% of delay minutes each year came from carrier and late-aircraft causes, and American Airlines at DFW was the top delay-producing carrier-airport pair every year.
 
-**How these findings help**
+**HOW THE FINDINGS SUPPORT**
 
 1.Planning ahead. Forecasting next month's delay per carrier-airport pair lets teams plan staffing, schedule buffers, and passenger communication, with about 24% less error than assuming next month looks like this one.
 
@@ -56,7 +56,7 @@ The final model has about 24% lower MAE and 17% lower RMSE than the strongest ba
 
 6.Honest evaluation. The time-based split and baselines show what the model can really do, instead of a number that looks better than it is.
 
-**Repository contents**
+**REPOSITORY CONTENTS**
 
 *File	Description*
 
@@ -73,7 +73,7 @@ Dataset
 
 2026 is a partial year (data ends in July).
 
-**Method**
+**METHOD**
 
 1.Time-based split. Train on 2020–2024 and test on 2025 onward.
 
@@ -89,7 +89,7 @@ Dataset
 
 7.Interpretation. Permutation importance, SHAP, and an error breakdown by flight volume, year, month, airport, and carrier.
 
-**Limitations**
+**LIMITATIONS**
 
 1.Aggregated data. The model forecasts monthly totals per carrier-airport pair, not delays of individual flights.
 
@@ -101,13 +101,13 @@ Dataset
 
 5.Partial final year. 2026 covers January to July only.
 
-**Tech stack**
+**TECH STACKS**
 
 Python, Pandas, NumPy, Scikit-Learn, XGBoost, CatBoost, SHAP, Matplotlib, Seaborn, Jupyter
 
-**How to run**
+**HOW TO RUN:**
 
-bash
+*bash*
 
 git clone https://github.com/aalaya24062001-debug/Optimizing-Sky-Traffic.git
 
