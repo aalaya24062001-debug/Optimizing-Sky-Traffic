@@ -1,7 +1,9 @@
-****Optimizing Sky Traffic: U.S. Airline Delay Forecasting (2020–2026)****
+##**Optimizing Sky Traffic: U.S. Airline Delay Forecasting (2020–2026)**##
+
 Forecasting monthly arrival delay minutes for U.S. airlines, finding what drives delay, and testing a what-if scenario. Built in Python and validated on future data the model never saw, then benchmarked against simple baselines.
 
 **Key results**
+
 Test period: January 2025 to July 2026 (35,632 records). Training period: July 2020 to December 2024 (101,060 records).
 
 Model	MAE (min)	RMSE (min)	R²	WAPE
@@ -23,6 +25,7 @@ WAPE = total absolute error ÷ total actual delay minutes.
 The final model has about 24% lower MAE and 17% lower RMSE than the strongest baseline.
 
 **Main findings**
+
 1.Forecasting works, with realistic accuracy. On unseen 2025–2026 data the final model reaches R² 0.912 and beats every baseline on every metric.
 
 2.Recent history is the strongest signal. Permutation importance ranks last month's delay first, then flight volume, then the 3-month rolling average. Carrier and the same-month-last-year delay come next. Holiday and quarter flags add almost nothing.
