@@ -1,4 +1,4 @@
-##**OPTIMIZING SKY TRAFFIC: U.S. Airline Delay Forecasting (2020–2026)**##
+**OPTIMIZING SKY TRAFFIC: U.S. Airline Delay Forecasting (2020–2026)**
 
 Forecasting monthly arrival delay minutes for U.S. airlines, finding what drives delay, and testing a what-if scenario. Built in Python and validated on future data the model never saw, then benchmarked against simple baselines.
 
